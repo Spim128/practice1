@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.loginbg{
+    /* background-image: url("img/—Pngtree—wood\ grain\ texture\ map\ image_1132381.jpg"); */
+    background-color: #7b5683;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    position: relative;
+}
+form{
+    width: 70vw;
+    max-width: 500px;
+    min-width: 250px;
+    min-height: 450px;
+    padding: 20px;
+    background-color: #c29254e9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 20px 0px #00000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+form input,#okbtn{
+    margin: 1vmax;
+    padding: 15px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #c58000;
+    text-align: center;
+}
+input{
+    width: 60%;
+    min-width: 180px;
+}
+#okbtn{
+    cursor: pointer;
+    font-size: 25px;
+    color: #028e31;
+    padding: 10px;
+}
+#okbtn:hover{
+    background-color: #1fc958cc;
+    color: #ffffff;
+}
+#backbtn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #c58000;
+}
+#backbtn:hover{
+    background-color: #d6d6d6;
+}

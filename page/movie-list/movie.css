@@ -1,0 +1,35 @@
+#movie-list{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 3px solid #777;
+}
+.movie{
+    width: 45%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #a070aa8e;
+}
+.movie img{
+    width: 100%;
+}
+.movie h3,p{
+    text-align: center;
+}
+.movie a{
+    float: right;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    .movie{
+        width: 23%;
+    }
+}
