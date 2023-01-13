@@ -1,18 +1,20 @@
+.content{
+    padding: 20px 0;
+}
 #movie-list{
     width: 90%;
     height: 100%;
     margin: auto;
-    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     flex-wrap: wrap;
     border: 3px solid #777;
 }
 .movie{
     width: 45%;
-    margin: 10px 0;
-    padding: 5px;
-    background-color: #a070aa8e;
+    margin: 2%;
+    padding: 0.5%;
+    background-color: #a070aa;
 }
 .movie img{
     width: 100%;
@@ -20,10 +22,57 @@
 .movie h3,p{
     text-align: center;
 }
-.movie a{
+.morebtn , .xbtn{
     float: right;
+    margin: 5px 20px 0 0;
+    color: #fff;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+.morebtn:hover{
+    color: #ccc;
+}
+.xbtn:hover{
+    color: #ccc;
 }
 
+.moredia{
+    width: 80%;
+    background-color: #704c79;
+    border-radius: 1vw;
+    border: none;
+    padding: 10px 0;
+    margin: auto;
+    box-shadow: 2px 2px 10px #3f2a43;
+}
+.moredia h3,h1{
+    width: 90%;
+    border-bottom: solid 1px #777;
+    margin: auto;
+    text-align: center;
+}
+.moredia p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+form{
+    width: 100%;
+    color: #fff;
+    font-size: 0.8em;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#length{
+    max-width: 30%;
+    font-size: 0.8em;
+    text-align: center;
+}
 
 
 
@@ -31,5 +80,10 @@
 @media screen and (min-width:768px){
     .movie{
         width: 23%;
+        margin: 0.5%;
+        padding: 0.5%;
+    }
+    .moredia{
+        width: 50%;
     }
 }

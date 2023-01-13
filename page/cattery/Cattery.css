@@ -1,6 +1,6 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 .none{
     display: none;
@@ -35,6 +35,7 @@
     padding: 10px;
 }
 #title p{
+    margin: 0;
     font-size: 26px;
     padding-right: 15px;
     color: burlywood;
@@ -79,7 +80,7 @@
 }
 #banner_img img{
     width: 100%;
-    padding-right: 200px;
+    margin-right: 200px;
 }
 #banner_seletor{
     width: max-content;
@@ -113,8 +114,9 @@
     overflow: hidden;
 }
 #menu_list{
-    width: 100%;
     background-color:burlywood;
+    border: solid 3px #55401d;
+    border-radius: 5vw 5vw 0 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -138,6 +140,7 @@
     transition: .2s;
 }
 #menu_list div p{
+    margin: 0;
     width: inherit;
     height: inherit;
     position: absolute;
@@ -160,12 +163,18 @@
     transform:rotate(360deg);
     transition: .5s;
 }
+#menu_img p {
+    width: fit-content;
+    margin: 10px auto 0;
+    color: #fff;
+    font-size: 5vw;
+}
 #menu_img img{
-    width: 80%;
+    width: 90%;
     max-width: 1000px;
     display: block;
     margin: auto;
-    padding: 30px;
+    padding: 20px;
 }
 .food_introduce{
     width: 90%;
@@ -217,7 +226,7 @@
     flex-direction: column;
     align-items: center;
 }
-#info_map img{
+#info_map{
     width: 100vw;
     height: 100vw;
     display: block;
@@ -231,22 +240,30 @@
     text-align:center;
     font-size: 20px;
 }
-#info_describe span{
+.upbtn{
     width: 50px;
     height: 50px;
-    font-size: 30px;
-    border: solid 2px rgb(255, 217, 161);
+    border: solid 2px aliceblue;
+    color: aliceblue;
     border-radius: 50%;
     position: absolute;
     right: 2vw;
     bottom: 200px;
-    background-color: aliceblue;
+    background-color: rgba(222, 184, 135, 0);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
     transition: 1s;
+}
+.upbtn:hover{
+    color: burlywood;
+    background-color: aliceblue;
+    transition: 0.2s;
+}
+.upbtn svg{
+    width: 70%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 15%;
 }
 
 
@@ -284,7 +301,7 @@
         flex-direction: row;
         justify-content: center;
     }
-    #info_map img{
+    #info_map{
         width: 50vw;
         max-width: 600px;
         height: 50vw;
@@ -306,7 +323,7 @@
         flex-direction: row;
         justify-content: center;
     }
-    #info_map img{
+    #info_map{
         width: 50vw;
         height: 50vw;
         border: solid 1px rgb(60, 60, 60);

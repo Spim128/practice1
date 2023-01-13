@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cattery No.7</title>
-        <link rel="stylesheet" href="Cattery.css" />
-        <link href="../../css/material-design-iconic-font.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="Cattery.css">
+        <!-- <link rel="stylesheet" href="../../css/material-design-iconic-font.min.css"> -->
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
     </head>
     <body>
         <div id="bg">
@@ -40,6 +41,7 @@
                 </div>
                 <div id="menu_introduce">
                     <div id="menu_img">
+                        <p>Menu</p>
                         <img src="../../img/yjyboQD.jpg">
                     </div>
                     <div id="food_introduce" class="none">
@@ -53,16 +55,27 @@
             </div>
             <div id="info">
                 <div id="info_map">
-                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=24.149865,120.693225&zoom=19&size=600x600&key=AIzaSyAu5yFXhxeimQocFd1RuKN_L5a0i5WoiWc">
+                    <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=24.149865,120.693225&zoom=19&size=600x600&key=AIzaSyAu5yFXhxeimQocFd1RuKN_L5a0i5WoiWc"> -->
                 </div>
                 <div id="info_describe">
                     <p>401台中市東區進化路221巷7號</p>
                     <p>營業時間: 09:00 ~ 16:00 (每周三公休)</p>
                     <p>電話: (04)23609796</p>
-                    <span id="upbtn"><i class="zmdi zmdi-long-arrow-up"></i></span>
+                    <!-- <span id="upbtn"><i class="zmdi zmdi-long-arrow-up"></i></span> -->
+                    <span class="upbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                        </svg>
+                    </span>
+                    
                 </div>
             </div>
         </div>
         <script src="Cattery.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/popper.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu5yFXhxeimQocFd1RuKN_L5a0i5WoiWc&callback=initMap"></script>
     </body>
 </html>
